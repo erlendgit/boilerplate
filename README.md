@@ -25,6 +25,29 @@ docker-compose exec web pip freeze
 
 Keep requirements that you did not explicitly use out of the requirements.txt, to make maintenance easier.
 
+Setup Grunt
+===
+
+To start working with your assets, install nodejs dependencies.
+
+```bash
+$ npm install grunt
+$ npm install grunt-contrib-copy
+$ npm install grunt-contrib-sass
+$ npm install grunt-contrib-watch
+```
+
+Add lines to the package.json file to start building and watching assets:
+
+```json
+{
+  "scripts": {
+    "watch": "grunt",
+    "build": "grunt build"
+  }
+}
+```
+
 Replace README.md
 ===
 
