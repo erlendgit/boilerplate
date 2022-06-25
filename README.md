@@ -4,7 +4,7 @@ Copy .env-example to .env
 settings.py should contain as little exact values as possible. Default environment settings
 should go in the .env-example file.
 
-Start your project
+Run your project
 ===
 
 ```bash
@@ -90,10 +90,18 @@ docker-compose exec web python manage.py createsuperuser
 
 And now visit http://localhost:8000/admin
 
-Replace README.md
+Remove boilerplate
 ===
 
-Create your own README.md
+Create your own README.md, and remove the git history of the boilerplate.
+
+```shell
+mv README.md maybe-nice-to-remember.md
+rm -rf .git
+git init .
+git add .
+git commit -m "Initial commit"
+```
 
 Start developing
 ===
