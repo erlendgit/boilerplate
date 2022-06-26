@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    {% load static %}
+    <title>{% block title %}{{ SITE_NAME }}{% endblock %}</title>
+    <link rel="stylesheet" src="{% static "css/style.css" %}">
+</head>
+<body>
+    {% block body %}{% endblock %}
+    <script src="{% static "js/app.js" %}"></script>
+</body>
+</html>
